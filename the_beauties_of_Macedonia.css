@@ -1,0 +1,111 @@
+.mein {
+    height: 100%;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4em;
+    color: rgb(120, 136, 96);
+    width: 75%;
+    
+  }
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    z-index: auto;
+    opacity: 0.4;
+    background-image: url(./images/macedonian_fleg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8 {
+    position: relative;
+    opacity: 0.9;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-radius: 57px;
+}
+
+
+ .img2{
+     background-image: url("./images/bela_voda.jpg");
+     min-height: 500px;
+ }
+ .img3 {
+     background-image: url("./images/debarski_banji.jpg");
+     min-height: 500px;
+ }
+ .img4 {
+     background-image: url("./images/kolesinski-vodopad.jpg");
+     min-height: 500px;
+ }
+ .img5 {
+     background-image: url("./images/kozuv_planina.jpg");
+     min-height: 500px;
+ }
+ .img6 {
+     background-image:url("./images/markovi_kuli.jpg");
+     min-height: 500px;
+ }
+ .img7 {
+     background-image: url("./images/the_cave_Vrelo.jpg");
+     min-height: 500px;
+     
+ }
+ .img8 {
+     background-image: url("./images/zovicka_korija.jpg");
+     min-height: 500px;
+ }
+
+ .section {
+     text-align: center;
+     padding: 50px 80px 0px;
+     color: black;
+     
+ }
+ .img-text {
+     position: absolute;
+     top:50%;
+     width: 100%;
+     color: white;
+     font-size: 28px;
+     line-height: inherit;
+     letter-spacing: 13px;
+     text-align: center;
+     text-transform: capitalize;
+     font-weight: 800;
+ }
+
+ .img-text, .description {
+     background-color: transparent;
+ }
+
+ .img-text-flag {
+     position: fixed;
+     top:0;
+     padding: 15px;
+     text-align: center;
+     width: 100%;
+     font-size: 17px;
+     font-weight: 600;
+     letter-spacing: 10px;
+     z-index: 1;
+     background-image: linear-gradient( 115deg, rgb(248, 248, 121), rgb(223, 67, 67));
+ }
+ 
+
+ @media(max-width:568px) {
+     .img1, .img2, .img3, .img4, .img5, .img6, .img7 {
+         background-attachment:scroll;
+     }
+ }
